@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App-login</title>
+    <link rel="stylesheet" type="text/css" href="styles/movie-app-style.css" />
+    <style>
+      table {
+        background-color: rgba(231, 242, 248, 0.7);
+        margin: auto;
+        padding: 50px;
+      }
+      .table-container {
+        background: linear-gradient(
+            to bottom,
+            rgba(231, 242, 248, 0.5),
+            rgba(231, 242, 248, 0.5)
+          ),
+          url(./images/movies-login.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        padding: 100px;
+        background-position: center;
+        height: 85vh;
+      }
+      #Footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      input {
+        padding: 5px;
+        border: 1px solid #74bdcb;
+        outline: none;
+      }
+      input:focus {
+        background-color: #74bdcb;
+        color: white;
+      }
+      ::placeholder {
+        color: #74bdcb;
+      }
+      form button[type="submit"] {
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <section style="background-color: #74bdcb" class="row bg-salmon">
+      <header class="row-w-65">
+        <nav id="Header-left-nav">
+          <a href="movie-app.html" class="button btn-aqua-bg-w">Movie App</a>
+        </nav>
+        <nav id="Header-right-nav">
+          <a href="#" class="button btn-aqua-bg-w">Movies</a>
+          <a href="#" class="button btn-aqua-bg-w">Series</a>
+          <a href="login.html" class="button btn-aqua">Login</a>
+        </nav>
+      </header>
+    </section>
+
+    <main>
+      <section class="table-container row">
+        <form action="movie-app.html">
+          <table cellpadding="0px" ; cellspacing="20px" class="row">
+            <tr>
+              <td><label for="k-ad">Kullanıcı Adı:</label></td>
+              <td>
+                <input
+                  required
+                  id="k-ad"
+                  type="text"
+                  placeholder="Kullanıcı adınızı giriniz"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="parola">Parola:</label></td>
+              <td>
+                <input
+                  required
+                  id="parola"
+                  type="password"
+                  placeholder="Şifrenizi giriniz"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button class="button btn-aqua" type="submit">Login</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </section>
+    </main>
+
+    <footer id="Footer" class="vh-15">
+      <section class="row-w-65">
+        <nav id="Footer_left-nav" class="col col-2">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Forum</a>
+          <a href="#"> Contant</a>
+        </nav>
+        <nav id="Footer_right-nav" class="col">
+          <a href="##"><i class="fa-brands fa-instagram button"></i> </a>
+          <a href="##"> <i class="fa-brands fa-facebook button"></i></a>
+          <a href="##"> <i class="fa-brands fa-twitter button"></i></a>
+        </nav>
+      </section>
+    </footer>
+  </body>
+</html>
